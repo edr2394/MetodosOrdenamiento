@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package ordenamientos;
+package metodosordenamiento;
 
 /**
  *
- * @author emily
+ * @author edr2394
  */
-public class Ordenamientos {
+public class MetodosOrdenamiento {
 
     /**
      * @param args the command line arguments
