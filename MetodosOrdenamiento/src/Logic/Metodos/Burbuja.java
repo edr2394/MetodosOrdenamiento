@@ -1,22 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Logic.Metodos;
-
-/**
- *
- * @author emily
- */
-public class Burbuja {
-    
-    
+public class Burbuja 
+{    
     int temp=0;
-    
-    
-public void Burbuja_Array(int Array[])
+    public void Burbuja_Array(int Array[])
     {
      for (int i=0; i<Array.length;i++)
      {
