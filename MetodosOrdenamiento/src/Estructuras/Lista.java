@@ -1,4 +1,4 @@
-package Logic.Estructuras;
+package Estructuras;
 public class Lista<E>
 {
     

@@ -1,15 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package Estructuras;
-
-/**
- *
- * @author edr2394
- */
-public class Nodo {
+public class Nodo<E> 
+{
     
+    protected E elemento;
+    protected Nodo<E> siguiente;
+    
+    public Nodo(E elemento) 
+    {
+        this.elemento = elemento;
+        this.siguiente = null;
+    }
+    
+    public Nodo(E elemento, Nodo<E> siguiente) 
+    {
+        this.elemento = elemento;
+        this.siguiente = siguiente;
+    }
+    
+    public void setsiguiente(Nodo<E> siguiente) 
+    {
+        this.siguiente = siguiente;
+    }
+
+    public Nodo<E> getsiguiente() 
+    {
+        return this.siguiente;
+    }
+    
+    public void setelemento(E pelemento)
+    {
+        this.elemento = pelemento;
+    }
+    
+    public E getelemento() 
+    {
+        return this.elemento;
+    }
 }
+
