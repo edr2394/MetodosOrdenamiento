@@ -1,5 +1,6 @@
 package Logic.Estructuras;
-public class Lista<E>
+import Logic.Interfaces.interLista;
+public class Lista<E> implements interLista<E>
 {
     
     protected int length;
@@ -13,13 +14,13 @@ public class Lista<E>
         this.tail = null;
     }
     
- 
+    @Override
     public boolean vacio() 
     {
         return this.length == 0;
     }
 
- 
+    @Override
     public boolean agregar(E pelemento) 
     {
         Nodo<E> nodo = new Nodo<E>(pelemento);
@@ -37,7 +38,7 @@ public class Lista<E>
         return true;
     }
 
- 
+    @Override
     public boolean eliminar(E pelemento) 
     {
         if(vacio()) 
@@ -80,13 +81,14 @@ public class Lista<E>
         this.length -= 1;
         return true;
     }
-
+    
+    @Override
     public int tamaño() 
     {
         return this.length;
     }
 
-
+    @Override
     public boolean insertar(int pos, E pelemento) {
 
         Nodo<E> nodo = new Nodo<E>(pelemento);
@@ -120,7 +122,8 @@ public class Lista<E>
         this.length += 1;
         return true;
     }
-
+    
+    @Override
     public void describir()
     {
         Nodo<E> nodoactual = this.head;
@@ -139,10 +142,13 @@ public class Lista<E>
         //System.out.println(this.length); 
     }
     
+    @Override
     public E getcola()
     {
         return this.tail.getelemento();
     }
+    
+    @Override
     public Nodo<E> getcabeza()
     {
         return this.head;

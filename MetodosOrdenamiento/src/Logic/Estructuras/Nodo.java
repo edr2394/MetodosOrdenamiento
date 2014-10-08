@@ -1,13 +1,10 @@
 package Logic.Estructuras;
-
 import Logic.Interfaces.InterNodo;
 
-public class Nodo<E> implements InterNodo
+public class Nodo<E> implements InterNodo<E>
 {
-    
     protected E elemento;
-    protected Nodo<E> siguiente;
-    
+    protected Nodo<E> siguiente;    
     public Nodo(E elemento) 
     {
         this.elemento = elemento;
@@ -19,7 +16,8 @@ public class Nodo<E> implements InterNodo
         this.elemento = elemento;
         this.siguiente = siguiente;
     }
-    @Overide
+    
+    @Override
     public void setsiguiente(Nodo<E> siguiente) 
     {
         this.siguiente = siguiente;
@@ -29,25 +27,17 @@ public class Nodo<E> implements InterNodo
     {
         return this.siguiente;
     }
-    @Overide 
+    
+    @Override 
     public void setelemento(E pelemento)
     {
         this.elemento = pelemento;
     }
     
+    @Override
     public E getelemento() 
     {
         return this.elemento;
-    }
-
-    @Override
-    public void setsiguiente(Nodo siguiente) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setelemento(Object pelemento) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
 
