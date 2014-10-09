@@ -1,11 +1,10 @@
-
-
 package Logic.Metodos;
 
 /**
  *
  * @author emily
  */
+
 public class InsertSort {
    
     public void Insert_Array(int[] Array)
@@ -25,5 +24,5 @@ public class InsertSort {
              System.out.print(Array[i]+" ");
          }
 
-    }
+    }//Termina el Metodo InsertSort para Arreglos con entero
 }
