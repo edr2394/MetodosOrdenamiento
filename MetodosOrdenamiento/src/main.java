@@ -26,6 +26,7 @@ public class main {
      Burbuja B=new Burbuja();
      B.Burbuja_Array(Array);
      
+     
      InsertSort I=new InsertSort();
      I.Insert_Array(Array);
      
@@ -42,6 +43,7 @@ public class main {
         
      RadixSort R=new RadixSort();
      R.Radix_Array(Array);
+     
      
     }
 }
