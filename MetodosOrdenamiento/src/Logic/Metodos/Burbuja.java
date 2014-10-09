@@ -8,7 +8,7 @@ public class Burbuja
      {
          for (int j=0;j<Array.length;j++)
          {
-             if (Array[i]>Array[j])
+             if (Array[i]<Array[j])
              {
               temp=Array[j];
               Array[j]=Array[i];
@@ -19,7 +19,7 @@ public class Burbuja
      
      for (int i=0;i<Array.length;i++)
      {
-         System.out.println(Array[i]);
+         System.out.print(Array[i]+" ");
      }
 
     }

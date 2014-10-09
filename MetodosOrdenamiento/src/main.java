@@ -1,5 +1,7 @@
 
 import Logic.Metodos.Burbuja;
+import Logic.Metodos.InsertSort;
+import Logic.Metodos.SelectionSort;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,11 +14,18 @@ import Logic.Metodos.Burbuja;
  * @author emily
  */
 public class main {
-    static int[] Array={9,6,3,2,5,8,7,4,1,0};
+    static int[] Array={9,5,6,2,8,7,3,4,1,0};
     
     public static void main(String[] args)
     {
-     Burbuja B=new Burbuja();
+    /* Burbuja B=new Burbuja();
      B.Burbuja_Array(Array);
+     
+     InsertSort I=new InsertSort();
+     I.Insert_Array(Array);
+     */
+        
+     SelectionSort S=new SelectionSort();
+     S.Selection_Array(Array);
     }
 }
