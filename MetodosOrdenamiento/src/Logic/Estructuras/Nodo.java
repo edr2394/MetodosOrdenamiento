@@ -1,10 +1,10 @@
 package Logic.Estructuras;
-public class Nodo<E> 
+import Logic.Interfaces.InterNodo;
+
+public class Nodo<E> implements InterNodo<E>
 {
-    
     protected E elemento;
-    protected Nodo<E> siguiente;
-    
+    protected Nodo<E> siguiente;    
     public Nodo(E elemento) 
     {
         this.elemento = elemento;
@@ -17,6 +17,7 @@ public class Nodo<E>
         this.siguiente = siguiente;
     }
     
+    @Override
     public void setsiguiente(Nodo<E> siguiente) 
     {
         this.siguiente = siguiente;
@@ -27,11 +28,13 @@ public class Nodo<E>
         return this.siguiente;
     }
     
+    @Override 
     public void setelemento(E pelemento)
     {
         this.elemento = pelemento;
     }
     
+    @Override
     public E getelemento() 
     {
         return this.elemento;

@@ -1,14 +1,49 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Logic.Interfaces;
+import Logic.Estructuras.Nodo;
 
-/**
- *
- * @author santii
- */
-public class interLista {
-    
+public interface interLista<E> 
+{
+ /**
+  * Devuelve la lista vacia
+  * @return 
+  */
+  public boolean vacio();
+  /**
+   * Añade al final de la lista.
+   * @param pelemento
+   * @return 
+   */
+  public boolean agregar(E pelemento);
+  /**
+   * Elimina el elemento especificado en el parametro.
+   * @param pelemento
+   * @return 
+   */
+  public boolean eliminar(E pelemento);
+  /**
+   * Devuelve el numero de elementos que contiene la lista.
+   * @return  
+   */
+  public int tamaño();
+  /**
+   * Inserta en la posición pos el elemento pelemento.
+   * @param pos
+   * @param pelemento
+   * @return 
+   */
+  public boolean insertar(int pos, E pelemento);
+  /**
+   * Imprime en consola el o los elementos contenidos en cada nodo.
+   */
+  public void describir();
+  /**
+   * Toma el elemento contenido en el ultimo nodo de la lista.
+   * @return 
+   */
+  public E getcola();
+  /**
+   * Toma el primer nodo de la lista.
+   * @return 
+   */
+  public Nodo<E> getcabeza();
 }
