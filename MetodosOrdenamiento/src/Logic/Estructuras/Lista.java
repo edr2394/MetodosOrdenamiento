@@ -140,8 +140,7 @@ public class Lista<E> implements interLista<E>
         //System.out.println(this.tail.getelem());
         //System.out.print("Tamaño: ");
         //System.out.println(this.length); 
-    }
-    
+    }   
     @Override
     public E getcola()
     {
