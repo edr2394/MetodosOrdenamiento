@@ -12,6 +12,7 @@ public class MergeSort {
     private int[] Array_Temporal;
     private int largo;
     
+    
     public void Merge_Array(int[] Array)
     {
         this.array=Array;
