@@ -39,9 +39,11 @@ public class Burbuja
      * @return 
      */
     public Lista Burbuja_Lista(Lista PorOrdenar){
+        //Si la lista tiene uno o menos elementos se puede decir que ya está ordenada.
         if(PorOrdenar.tamaño()<=1){
             this.ListaOrdenada=PorOrdenar;                       
         }
+        //Sino entra al bucle de ordenamiento
         else{
             this.ListaOrdenada=PorOrdenar;
             this.Iterador=ListaOrdenada.getcabeza();

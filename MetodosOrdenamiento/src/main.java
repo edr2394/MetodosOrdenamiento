@@ -1,7 +1,6 @@
 
 import Logic.Estructuras.Lista;
 import Logic.Metodos.Burbuja;
-import Logic.Metodos.BurbujaLista;
 import Logic.Metodos.InsertSort;
 import Logic.Metodos.MergeSort;
 import Logic.Metodos.QuickSort;
@@ -25,8 +24,8 @@ public class main {
         Lista.agregar(3);
         Lista.agregar(2);
         Lista.agregar(0);
-        BurbujaLista Burbuja=new BurbujaLista();
-        Lista=Burbuja.BurbujaLista(Lista);
+        Burbuja Burbuja=new Burbuja();
+        Lista=Burbuja.Burbuja_Lista(Lista);
         Lista.describir();
     
     /* Burbuja B=new Burbuja();
