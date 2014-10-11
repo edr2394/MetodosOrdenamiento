@@ -32,6 +32,12 @@ public class Arreglos {
         return NuevoArreglo;
     }
  
+    
+    /**
+     * Metodo para la impresion de Arreglos.
+     * Recorre el arreglo e imprime cada uno de sus digitos en consola.
+     * @param Arreglo 
+     */
     public void Imprimir_Arreglo(int[] Array)//Imprime en consola un arreglo 
     {
          for (int i=0;i<Array.length;i++)

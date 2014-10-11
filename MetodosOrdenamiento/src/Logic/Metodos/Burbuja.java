@@ -17,7 +17,7 @@ public class Burbuja
     Requiere n al cuadrado, cantidad de comparaciones.
     Bastante ineficiente, pero muy sencillo de implementar.
     */
-    Arreglos A=new Arreglos();
+    Arreglos Arreglo=new Arreglos();//Instancia la clase Arreglos.
     private int Compara1;// Se usa en el metodo Burbuja_Lista
     private int Compara2;//  Se usa en el metodo Burbuja_Lista
     private Nodo Iterador;//  Se usa en el metodo Burbuja_Lista
@@ -46,10 +46,8 @@ public class Burbuja
              }
          }
      }
-       
-    A.Imprimir_Arreglo(Array);
-    
-    
+    Arreglo.Imprimir_Arreglo(Array);
+        
     }// Fin del metodo de Bubuja para arreglos de enteros
     
     

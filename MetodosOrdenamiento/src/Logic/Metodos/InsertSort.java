@@ -1,5 +1,7 @@
 package Logic.Metodos;
 
+import Logic.Estructuras.Arreglos;
+
 /**
  *
  * @author emily
@@ -10,6 +12,7 @@ public class InsertSort {
     
     */
     
+    Arreglos Arreglo=new Arreglos();
     
     /** Metodo para el Ordenamiento de Arreglos por InsertSort.
      * Recibe un arreglo que contiene numeros enteros desordenados, 
@@ -29,12 +32,8 @@ public class InsertSort {
                Array[j+1]=tmp;
            }    
         } 
+        Arreglo.Imprimir_Arreglo(Array);
         
-        for (int i=0;i<Array.length;i++)//Impresion en consola del arreglo
-         {
-             System.out.print(Array[i]+" ");
-         }
-
     }//Fin del Metodo InsertSort para Arreglos de enteros.
 
 }//Fin de la clase InsertSort

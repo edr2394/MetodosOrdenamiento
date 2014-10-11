@@ -1,5 +1,7 @@
 package Logic.Metodos;
 
+import Logic.Estructuras.Arreglos;
+
 /**
  *
  * @author emily
@@ -7,6 +9,8 @@ package Logic.Metodos;
 
 public class SelectionSort {
      
+    Arreglos Arreglo=new Arreglos();
+    
     public void Selection_Array(int [] Array)
     {
      for (int i=0;i<Array.length-1;i++)
@@ -21,11 +25,8 @@ public class SelectionSort {
            Array[i]=Numero_Menor;
          }
      }   
-       for (int i=0;i<Array.length;i++)
-        {
-         System.out.print(Array[i]+" ");
-        }
-
+       
+     Arreglo.Imprimir_Arreglo(Array);
        
    }
     

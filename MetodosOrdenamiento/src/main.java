@@ -1,7 +1,7 @@
 
+
 import Logic.Estructuras.*;
 import Logic.Metodos.*;
-
 
 public class main {
     static int[] Array={9,5,6,2,8,7,3,4,1,0};
@@ -22,8 +22,8 @@ public class main {
         Lista.agregar(3);
         Lista.agregar(2);
         Lista.agregar(0);
-        BurbujaLista Burbuja=new BurbujaLista();
-        Lista=Burbuja.BurbujaLista(Lista);
+        Burbuja Burbuja=new Burbuja();
+        Lista=Burbuja.Burbuja_Lista(Lista);
         Lista.describir();
     
      

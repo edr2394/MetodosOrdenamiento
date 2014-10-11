@@ -2,16 +2,20 @@
 
 package Logic.Metodos;
 
+import Logic.Estructuras.Arreglos;
+
 /**
  *
  * @author emily
  */
+ 
 
 public class MergeSort {
     private int[]array;
     private int[] Array_Temporal;
     private int largo;
     
+    Arreglos Arreglo=new Arreglos();
     
     public void Merge_Array(int[] Array)
     {
@@ -20,10 +24,7 @@ public class MergeSort {
         this.Array_Temporal= new int[largo];
         MergeSort(0,largo-1);
      
-    for (int i=0;i<Array.length;i++)
-     {
-         System.out.print(Array[i]+" ");
-     }
+    Arreglo.Imprimir_Arreglo(Array);
                 
     }
     private void MergeSort(int indice_menor,int indice_mayor)
