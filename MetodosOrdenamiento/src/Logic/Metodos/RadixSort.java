@@ -1,12 +1,10 @@
-
 package Logic.Metodos;
+import Logic.Estructuras.Arreglos;
 
-/**
- *
- * @author emily
- */
 
 public class RadixSort {
+    
+    Arreglos Arreglo=new Arreglos();
     
     public void Radix_Array(int[] Array)
     {
@@ -44,10 +42,7 @@ public class RadixSort {
             indice*=10;
             }
             
-           for (i=0;i<Array.length;i++)
-     {
-         System.out.print(Array[i]+" ");
-     }
+           Arreglo.Imprimir_Arreglo(Array);
            
         }
         

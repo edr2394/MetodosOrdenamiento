@@ -1,17 +1,31 @@
-
-
 package Logic.Metodos;
+import Logic.Estructuras.Arreglos;
 
-/**
- *
- * @author emily
- */
+ 
 
 public class MergeSort {
+    /*
+    Divide el arreglo por la mitad y crea dos sub-arreglos,
+    toma cada uno de ellos y los sub divide, hasta lograr arreglos
+    de 1 solo elemento, luego los uno combina en nuevos arreglo de 2 unidades,
+    ordenados, luego vuelve a combinar los arreglos, hasta lograr un unico
+    arreglo con todos los elementos.
+    */
+    
     private int[]array;
     private int[] Array_Temporal;
     private int largo;
     
+    Arreglos Arreglo=new Arreglos();
+    
+    /**
+     * Metodo para el ordenamiento de arreglos por MergeSort.
+     * Recibe un arreglo, que contiene numeros
+     * , y lo devuelve ordenado.
+     * @param Arreglo desordenado.
+     * @return El arreglo ordenado.
+     * @param Array 
+     */
     public void Merge_Array(int[] Array)
     {
         this.array=Array;
@@ -19,13 +33,10 @@ public class MergeSort {
         this.Array_Temporal= new int[largo];
         MergeSort(0,largo-1);
      
-    for (int i=0;i<Array.length;i++)
-     {
-         System.out.print(Array[i]+" ");
-     }
+    Arreglo.Imprimir_Arreglo(Array);
                 
     }
-    private void MergeSort(int indice_menor,int indice_mayor)
+    private void MergeSort(int indice_menor,int indice_mayor)//Crea los sub arreglos
         {
             if (indice_menor<indice_mayor)
             {

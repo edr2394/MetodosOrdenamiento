@@ -1,18 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package Logic.Metodos; 
+import Logic.Estructuras.Arreglos;
 
-package Logic.Metodos;
 
-/**
- *
- * @author emily
- */
 public class QuickSort {
     private int array[];
     private int largo;
+    Arreglos Arreglo=new Arreglos();
+    
     public void Quick_Array(int[] Array)
     {
         if (Array==null||Array.length==0)
@@ -23,10 +17,7 @@ public class QuickSort {
             QuickSort(0,largo-1);
             
         }
-          for (int i=0;i<Array.length;i++)
-        {
-         System.out.print(Array[i]+" ");
-        }
+        Arreglo.Imprimir_Arreglo(Array);
     }
     private void QuickSort(int indice_menor, int indice_mayor)
         {

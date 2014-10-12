@@ -1,5 +1,7 @@
 package Logic.Metodos;
+import Logic.Estructuras.Arreglos;
 
+<<<<<<< HEAD
 import Logic.Estructuras.ListaDoble;
 import Logic.Estructuras.NodoDoble;
 
@@ -11,23 +13,47 @@ import Logic.Estructuras.NodoDoble;
 public class InsertSort {
     
     
+=======
+
+public class InsertSort {
+   
+    /* 
+    Se toma el primer elemento y se considera que ya esta ordenado,
+    luego se toma el elemento siguiente, se compara con los ya ordenados, 
+    cuando se encuentra que este es menor que uno del arreglo, se inserta en esa posicion
+    y los elementos mayores se desplazan a la derecha.
+    
+    */
+    
+    Arreglos Arreglo=new Arreglos();
+    
+    /** Metodo para el Ordenamiento de Arreglos por InsertSort.
+     * Recibe un arreglo que contiene numeros enteros desordenados, 
+     * y los ordena por medio de InsertSort.
+     * @param Arreglo desordenado.
+     * @return EL arreglo ordenado.
+     */
+>>>>>>> 8be381fa909034b3341798b66524c77ad0ffa4a7
     public void Insert_Array(int[] Array)
     {
-        for (int i=1;i<Array.length; i++)
-        {
-           int tmp=Array[i];
-           
-           for (int j=i-1;j>=0 && tmp<Array[j];j--)
-           {
-               Array[j+1]=Array[j];
-               Array[j+1]=tmp;
-           }    
-        }
-        for (int i=0;i<Array.length;i++)
-         {
-             System.out.print(Array[i]+" ");
-         }
+     int j; 
+     for (int i = 1; i < Array.length; i++)    
+     {
+        int temporal = Array[ i ];
+        
+                for(j = i - 1; (j >= 0) && (Array[ j ] > temporal); j--)   
+                {
+                     Array[ j+1 ] = Array[ j ];
+                }
+                
+         Array[ j+1 ] = temporal;    
+     }
+         
+        Arreglo.Imprimir_Arreglo(Array);
+        
+    }//Fin del Metodo InsertSort para Arreglos de enteros.
 
+<<<<<<< HEAD
     }//Termina el Metodo InsertSort para Arreglos con entero
     
     public ListaDoble Insert_Lista(ListaDoble Lista)
@@ -104,3 +130,6 @@ public class InsertSort {
     }        
 
 }
+=======
+}//Fin de la clase InsertSort
+>>>>>>> 8be381fa909034b3341798b66524c77ad0ffa4a7

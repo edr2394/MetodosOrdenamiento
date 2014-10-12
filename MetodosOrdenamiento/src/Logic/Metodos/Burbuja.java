@@ -1,32 +1,33 @@
 package Logic.Metodos;
+import Logic.Estructuras.*;
+import Logic.Estructuras.*;
 
-import Logic.Estructuras.Lista;
-import Logic.Estructuras.Nodo;
 
 
 public class Burbuja 
 {    
     /*
     Compara cada elemento de la lista con el siguiente,
-    y si el orden es equivocado los intercambia.
-    Revisa varias veces toda la lista, hasta que no necesite
-    mas cambios, lo que significa que esta ordenada.
-    */
+    si el orden es incorrecto los intercambia (Swap),
+    Y se mueve hacia el siguiente par de numeros.
+    Con cada ciclo del metodo al menos 1 elemento queda ordenado.
     
+    */
+    Arreglos Arreglo=new Arreglos();//Instancia la clase Arreglos.
     private int Compara1;// Se usa en el metodo Burbuja_Lista
     private int Compara2;//  Se usa en el metodo Burbuja_Lista
     private Nodo Iterador;//  Se usa en el metodo Burbuja_Lista
     private Nodo tempNodo;//  Se usa en el metodo Burbuja_Lista
     private Lista ListaOrdenada;//  Se usa en el metodo Burbuja_Lista
     private int temporal=0;// Se usa en el metodo Burbuja_Array
-    
+  
     /**
-     * Método para el ordenamiento de arreglos por burbuja. Recibe un arreglo, que contiene numeros
-     * enteros, y lo devuelve ordenado.
+     * Método para el ordenamiento de arreglos por burbuja. 
+     * Recibe un arreglo, que contiene numeros
+     * , y lo devuelve ordenado.
      * @param Arreglo desordenado de enteros.
      * @return El arreglo ordenado.
      */
-    
     public void Burbuja_Array(int[] Array)
     {
      for (int i=0; i<Array.length;i++)
@@ -41,28 +42,21 @@ public class Burbuja
              }
          }
      }
-     
-     for (int i=0;i<Array.length;i++) // Imprime en consola el arreglo ordenado
-     {
-         System.out.print(Array[i]+" ");
-     }
-
-    }
+    Arreglo.Imprimir_Arreglo(Array);
+        
+    }// Fin del metodo de Bubuja para arreglos de enteros
     
     
     /**
-     * Método para el ordenamiento de listas por burbuja. Recibe una Lista, que contiene numeros
-     * enteros, y la devuelve ordenada
+     * Método para el ordenamiento de listas por burbuja. Recibe una Lista,
+     * que contiene numeros enteros, y la devuelve ordenada
      * @param Lista desordenada de enteros.
      * @return La lista ordenada.
      */
-    
     public Lista Burbuja_Lista(Lista PorOrdenar){
-        //Si la lista tiene uno o menos elementos se puede decir que ya está ordenada.
         if(PorOrdenar.tamaño()<=1){
             this.ListaOrdenada=PorOrdenar;                       
         }
-        //Sino entra al bucle de ordenamiento
         else{
             this.ListaOrdenada=PorOrdenar;
             this.Iterador=ListaOrdenada.getcabeza();
@@ -86,8 +80,10 @@ public class Burbuja
             }
         }
         return this.ListaOrdenada;
-    }
-}
+        
+    }//Fin del metodo de Burbuja para Listas con enteros
+    
+}//Fin de la Clase Burbuja
 
 
 
