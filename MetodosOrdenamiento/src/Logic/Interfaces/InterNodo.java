@@ -3,8 +3,8 @@ import Logic.Estructuras.Nodo;
 public interface InterNodo <E> 
 {
     /**
-     * Establece el siguiente nodo.
-     * @param siguiente 
+     * Retorna el nodo anterior
+     * @return 
      */
     public void setsiguiente(Nodo<E> siguiente);
     /**
