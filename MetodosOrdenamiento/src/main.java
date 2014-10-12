@@ -27,27 +27,35 @@ public class main {
         Lista.describir();
                 */
      
-     
+     /*
      InsertSort I=new InsertSort();
      I.Insert_Array(R.Arreglos_Random(50));
-     
+     */
         
+     /*   
      SelectionSort S=new SelectionSort();
      S.Selection_Array(R.Arreglos_Random(50));
-     
+     */
         
+     /*   
      QuickSort Q=new QuickSort();
      Q.Quick_Array(R.Arreglos_Random(50));  
-                               
+     */
+        
+     /*   
      MergeSort M=new MergeSort();
      M.Merge_Array(R.Arreglos_Random(100));
-       
+     */
+        
+     /*   
      RadixSort RS=new RadixSort();
      RS.Radix_Array(R.Arreglos_Random(10));
-     
+     */
+        
+     /*   
     Burbuja B=new Burbuja();
     B.Burbuja_Array(R.Arreglos_Random(100));
-     
+     */
     
     
                 }

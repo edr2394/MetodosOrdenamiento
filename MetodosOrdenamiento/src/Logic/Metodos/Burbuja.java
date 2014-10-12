@@ -1,5 +1,4 @@
 package Logic.Metodos;
-
 import Logic.Estructuras.*;
 import Logic.Estructuras.*;
 
@@ -25,7 +24,7 @@ public class Burbuja
     /**
      * Método para el ordenamiento de arreglos por burbuja. 
      * Recibe un arreglo, que contiene numeros
-     * enteros, y lo devuelve ordenado.
+     * , y lo devuelve ordenado.
      * @param Arreglo desordenado de enteros.
      * @return El arreglo ordenado.
      */

@@ -1,11 +1,6 @@
 package Logic.Metodos;
-
 import Logic.Estructuras.Arreglos;
 
-/**
- *
- * @author emily
- */
 
 public class InsertSort {
    
@@ -22,7 +17,7 @@ public class InsertSort {
     /** Metodo para el Ordenamiento de Arreglos por InsertSort.
      * Recibe un arreglo que contiene numeros enteros desordenados, 
      * y los ordena por medio de InsertSort.
-     * @param Arreglo desordenado de enteros.
+     * @param Arreglo desordenado.
      * @return EL arreglo ordenado.
      */
     public void Insert_Array(int[] Array)

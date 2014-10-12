@@ -1,11 +1,6 @@
 package Logic.Metodos;
-
 import Logic.Estructuras.Arreglos;
 
-/**
- *
- * @author emily
- */
 
 public class SelectionSort {
      /*
@@ -17,7 +12,7 @@ public class SelectionSort {
     Arreglos Arreglo=new Arreglos();
     
     /**Metodo para el ordenamiento de arreglos por SelectionSort.
-     * Recibe una arreglo que contiene numeros enteros,
+     * Recibe una arreglo que contiene numeros,
      * en desorden y lo retorna ordenado.
      * @param Array 
      */
