@@ -12,10 +12,7 @@ public class Burbuja
     si el orden es incorrecto los intercambia (Swap),
     Y se mueve hacia el siguiente par de numeros.
     Con cada ciclo del metodo al menos 1 elemento queda ordenado.
-    Revisa varias veces toda la lista, hasta que no necesite
-    mas cambios, lo que significa que esta ordenada.
-    Requiere n al cuadrado, cantidad de comparaciones.
-    Bastante ineficiente, pero muy sencillo de implementar.
+    
     */
     Arreglos Arreglo=new Arreglos();//Instancia la clase Arreglos.
     private int Compara1;// Se usa en el metodo Burbuja_Lista

@@ -8,7 +8,12 @@ import Logic.Estructuras.Arreglos;
  */
 
 public class InsertSort {
-   /*
+   
+    /* 
+    Se toma el primer elemento y se considera que ya esta ordenado,
+    luego se toma el elemento siguiente, se compara con los ya ordenados, 
+    cuando se encuentra que este es menor que uno del arreglo, se inserta en esa posicion
+    y los elementos mayores se desplazan a la derecha.
     
     */
     
@@ -22,16 +27,19 @@ public class InsertSort {
      */
     public void Insert_Array(int[] Array)
     {
-        for (int i=1;i<Array.length; i++)
-        {
-           int tmp=Array[i];
-           
-           for (int j=i-1;j>=0 && tmp<Array[j];j--)
-           {
-               Array[j+1]=Array[j];
-               Array[j+1]=tmp;
-           }    
-        } 
+     int j; 
+     for (int i = 1; i < Array.length; i++)    
+     {
+        int temporal = Array[ i ];
+        
+                for(j = i - 1; (j >= 0) && (Array[ j ] > temporal); j--)   
+                {
+                     Array[ j+1 ] = Array[ j ];
+                }
+                
+         Array[ j+1 ] = temporal;    
+     }
+         
         Arreglo.Imprimir_Arreglo(Array);
         
     }//Fin del Metodo InsertSort para Arreglos de enteros.
